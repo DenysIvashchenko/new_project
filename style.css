@@ -50,7 +50,7 @@ list-style-type: none;
 }
 
 .wrapper {
-    margin: 0;
+    margin: 0 auto;
     max-width: 1100px;
     width: 100%;
 }
@@ -62,9 +62,10 @@ list-style-type: none;
 }
 
 .intro-img {
-    background-image: url(https://images.sherwin-williams.com/content_images/sw-img-livingroom-17-hdr.jpg);
+    background-image: url(https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     width: 965px;
     height: 640px;
+    /* background-repeat: no-repeat; */
 }
 .intro .intro-text {
     position: absolute;
@@ -78,7 +79,7 @@ list-style-type: none;
     background-color: #ffcc01;
     max-width: 590px;
     position: absolute;
-    right: 170px;
+    right: 125px;
     top: 638px;
     display: flex;
     justify-content: space-between;
@@ -116,7 +117,7 @@ list-style-type: none;
 .squer {
     width: 200px;
     height: 200px;
-    background-color:#f6f5f4;
+    background-color:#e2e0dd;
     margin: 30px;
     display: flex;
     justify-content: center;
@@ -131,6 +132,89 @@ list-style-type: none;
 }
 .square-text {
     font-size: 14px;
+}
+
+.appartments {
+    background: #e2e0dd;
+    padding: 60px 0;
+
+}
+.apart h2 {
+    margin-bottom: 85px;
+    font-size: 40px;
+}
+.card {
+    max-width: 348px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.card-container {
+    padding: 25px;
+}
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.card-info .money {
+    font-size: 18px;
+    color: #ffcc01;
+
+}
+.card-info i {
+    margin-right: 8px;
+}
+.card-info span:first-child {
+    margin-right: 18px;
+}
+.card:hover {
+    background: #e2e0dd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;
+}
+
+.apart input[type=text] {
+    margin-top: 50px;
+    width: 300px;
+    height: 70px;
+    border: none;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: 27px;
+    outline: none;
+    padding-left: 62px;
+   font-size: 15px;
+   color: #919eb1;
+   border-top-left-radius: 4px;
+   border-bottom-left-radius: 4px;
+
+}
+.apart input[type=submit] {
+    width: 115px;
+    border: none;
+    height: 70px;
+    background: #ffcc01;
+    font-size: 15px;
+    margin-left: -4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.all {
+    width: 250px;
+    height: 70px;
+    border: none;
+    margin-left: 40px;
+    margin-top: 52px;
+    font-size: 15px;
+}
+.buttons-search {
+    display: flex;
 }
 
 @media screen and (max-width: 765px) {
@@ -238,5 +322,25 @@ list-style-type: none;
 .squer {
     height: 140px;
 }
+.cards {
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-row-gap: 10px; 
+    justify-items: center ;
+}
+.apart input[type=text] {
+    margin-top: 20px;
+    width: 130px;
+}
+.buttons-search {
+    flex-direction: column;
+    margin-left: 4%;
+}
+.all {
+    background: #fff;
+    margin-top: 10px;
+    margin-left: 0;
+}
+    
 
 }
